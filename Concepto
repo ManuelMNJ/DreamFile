@@ -1,0 +1,149 @@
+Proyecto Final DAW – DREAMFILE
+Autor: Manuel
+Fecha de inicio: [añadir fecha]
+Estado: En desarrollo
+Versión: 1.0 (conceptual, abierta a mejoras)
+
+───────────────────────────────────────────────
+🧠 CONCEPTO GENERAL
+───────────────────────────────────────────────
+DreamFile es una plataforma web donde los usuarios registran sus sueños nocturnos y los comparten (si lo desean) con la comunidad. A través de un sistema de análisis semántico y visualización de datos, se detectan patrones emocionales, símbolos recurrentes y conexiones entre sueños. El objetivo es crear un archivo colectivo del subconsciente humano, sin caer en lo superficial ni en lo técnico vacío.
+
+No es una red social. No es un diario. Es una herramienta introspectiva y cultural.
+
+───────────────────────────────────────────────
+🎯 OBJETIVOS PRINCIPALES
+───────────────────────────────────────────────
+- Permitir a los usuarios registrar sueños con estructura clara.
+- Analizar el contenido textual para extraer emociones y símbolos.
+- Visualizar tendencias colectivas (nube de palabras, emociones, etc.).
+- Fomentar la introspección y la conexión simbólica entre personas.
+- Mantener privacidad y anonimato como pilares fundamentales.
+
+───────────────────────────────────────────────
+🧩 FUNCIONALIDADES CLAVE
+───────────────────────────────────────────────
+1. Registro de sueños
+   - Título
+   - Fecha
+   - Texto libre del sueño
+   - Autor (nombre o anónimo)
+   - Etiquetas predefinidas (ej. agua, vuelo, muerte, etc.)
+   - Emociones asociadas (ej. miedo, alegría, confusión)
+   - Visibilidad: público / privado / anónimo
+
+2. Visualización colectiva
+   - Nube de símbolos más frecuentes
+   - Gráficas de emociones predominantes
+   - Mapa de sueños por ubicación (opcional)
+   - Evolución emocional personal
+
+3. Interacción
+   - Likes simbólicos (no numéricos, sino “ecos”, “reflejos”)
+   - Comentarios breves (opcional, aún por decidir)
+   - Sueños similares (comparación semántica entre usuarios)
+
+4. Privacidad
+   - Sueños privados no visibles para otros
+   - Sueños anónimos visibles sin mostrar autor
+   - Control total del usuario sobre visibilidad
+
+───────────────────────────────────────────────
+🧱 DIAGRAMA DE CLASES (versión inicial)
+───────────────────────────────────────────────
+Clase Usuario
+-------------
+- id: int
+- nombre: string
+- email: string
+- contraseña: string
+- esAnonimo: boolean
+- fechaRegistro: date
+- sueños: List<Sueño>
+- likes: List<Like>
+- comentarios: List<Comentario>
+
+Clase Sueño
+-----------
+- id: int
+- titulo: string
+- fecha: date
+- texto: string
+- autor: Usuario
+- esPublico: boolean
+- esAnonimo: boolean
+- etiquetas: List<Etiqueta>
+- emociones: List<Emocion>
+- likes: List<Like>
+- comentarios: List<Comentario>
+
+Clase Etiqueta
+--------------
+- id: int
+- nombre: string
+- sueños: List<Sueño>
+
+Clase Emocion
+-------------
+- id: int
+- tipo: string (miedo, alegría, etc.)
+- sueños: List<Sueño>
+
+Clase Like
+----------
+- id: int
+- usuario: Usuario
+- sueño: Sueño
+- fecha: date
+
+Clase Comentario (opcional)
+---------------------------
+- id: int
+- texto: string
+- fecha: date
+- autor: Usuario
+- sueño: Sueño
+
+───────────────────────────────────────────────
+🧪 PLANTEAMIENTO TÉCNICO
+───────────────────────────────────────────────
+Fase 1 – Modelado lógico en Java
+✔ Crear clases y simular datos en memoria
+✔ Validar flujo de publicación, likes, etiquetas
+✔ No usar base de datos ni servidor aún
+
+Fase 2 – Diseño de interfaz web
+✔ Bocetar pantallas clave: registro, exploración, perfil
+✔ Definir estilo visual: minimalista, introspectivo, poético
+✔ Pensar en navegación y experiencia de usuario
+
+Fase 3 – Migración a web funcional
+✔ Stack sugerido: HTML/CSS/JS + PHP o Node.js
+✔ Base de datos: MySQL o PostgreSQL
+✔ Backend para persistencia y lógica real
+✔ Conexión entre frontend y backend
+✔ Visualización con Chart.js o D3.js
+
+───────────────────────────────────────────────
+⚠️ CRÍTICA Y RIESGOS
+───────────────────────────────────────────────
+- Sin persistencia, el proyecto puede parecer una demo estática
+- El análisis semántico debe ir más allá de contar palabras
+- El diseño debe transmitir emoción, no solo verse bonito
+- Los comentarios deben ser opcionales y moderados
+- Las etiquetas deben estar controladas para evitar ruido
+- La privacidad debe estar bien gestionada desde el inicio
+
+───────────────────────────────────────────────
+📌 NOTAS ABIERTAS PARA FUTURAS MEJORAS
+───────────────────────────────────────────────
+- Añadir audio o ilustraciones generadas por IA
+- Sistema de logros o evolución personal del usuario
+- Integración con calendario lunar o ciclos de sueño
+- Modo “explorador onírico” para navegar sueños por símbolos
+- Análisis colectivo por zonas geográficas o estaciones del año
+
+───────────────────────────────────────────────
+🧭 CONCLUSIÓN
+───────────────────────────────────────────────
+DreamFile es un proyecto con alma. No busca likes ni viralidad, sino introspección, conexión y exploración simbólica. Si se ejecuta con sensibilidad y precisión, puede convertirse en una experiencia digital única. Este documento sirve como guía flexible: no está cerrado, sino abierto a evolución. El objetivo es construir algo que no solo funcione, sino que **signifique**.
