@@ -1,0 +1,53 @@
+/* Estilos específicos para index.html */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    text-align: center;
+    padding: 2rem;
+}
+
+main h2 {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+}
+
+main p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    color: var(--color-secondary);
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--color-interactive);
+}
+
+/* Fondo decorativo opcional */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 70%);
+    z-index: -1;
+}

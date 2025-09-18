@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "titulo": "El lago sin fondo",
+    "fecha": "2025-09-15",
+    "autor": "anónimo",
+    "texto": "Caminaba por un bosque y llegaba a un lago que no reflejaba nada. Me lanzaba y caía sin fin.",
+    "etiquetas": ["agua", "caída"],
+    "emocion": "confusión",
+    "visibilidad": "publico",
+    "likes": 12
+  },
+  {
+    "id": 2,
+    "titulo": "Vuelo sobre la ciudad",
+    "fecha": "2025-09-16",
+    "autor": "Manuel",
+    "texto": "Volaba entre edificios, sin miedo, sintiendo libertad absoluta.",
+    "etiquetas": ["vuelo"],
+    "emocion": "alegría",
+    "visibilidad": "publico",
+    "likes": 8
+  },
+  {
+    "id": 3,
+    "titulo": "La puerta que no abre",
+    "fecha": "2025-09-17",
+    "autor": "anónimo",
+    "texto": "Intentaba abrir una puerta en un pasillo interminable. Cada vez que la tocaba, cambiaba de forma.",
+    "etiquetas": ["puertas"],
+    "emocion": "miedo",
+    "visibilidad": "privado",
+    "likes": 0
+  }
+]

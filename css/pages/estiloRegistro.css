@@ -1,0 +1,166 @@
+/* Tipografía base */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@300;400&display=swap');
+
+:root {
+    --color-bg: #1C1F2A;
+    --color-text: #F4F4F2;
+    --color-secondary: #A8A9AD;
+    --color-accent: #E8CFCF;
+    --color-card: #EDE6DC;
+    --color-interactive: #C7D6E0;
+    --font-title: 'Cormorant Garamond', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    color: var(--color-accent);
+}
+
+header p {
+    font-size: 1.1rem;
+    color: var(--color-secondary);
+}
+
+/* Formulario */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#formulario-registro {
+    background-color: var(--color-card);
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-registro h2 {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-bg);
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: var(--color-bg);
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-interactive);
+    color: var(--color-bg);
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Checkbox y enlaces */
+form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+form a {
+    color: var(--color-bg);
+    text-decoration: underline;
+}
+
+form a:hover {
+    color: var(--color-accent);
+}
+
+/* Botón */
+button[type="submit"] {
+    margin-top: 2rem;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-interactive);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
+
+form input,
+form select,
+form textarea {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.terminos-container {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    background: var(--color-interactive);
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+}
+
+.terminos-container label {
+    margin: 0;
+    font-weight: 400;
+    color: var(--color-bg);
+    font-size: 1rem;
+}

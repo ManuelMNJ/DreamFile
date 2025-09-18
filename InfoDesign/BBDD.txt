@@ -1,0 +1,53 @@
+Tabla usuarios
+--------------
+- id_usuario (PK)
+- nombre
+- nombre_usuario (único)
+- email (único)
+- contraseña
+- es_anonimo (boolean)
+- rol (usuario/admin)
+- fecha_registro
+
+Tabla sueños
+------------
+- id_sueño (PK)
+- id_usuario (FK)
+- titulo
+- fecha
+- texto
+- visibilidad (publico/privado)
+- es_anonimo (boolean)
+
+Tabla etiquetas
+---------------
+- id_etiqueta (PK)
+- nombre
+
+Tabla sueños_etiquetas (N:N)
+----------------------------
+- id_sueño (FK)
+- id_etiqueta (FK)
+
+Tabla emociones
+---------------
+- id_emocion (PK)
+- tipo (miedo, alegría, etc.)
+
+Tabla sueños_emociones (1:N)
+----------------------------
+- id_sueño (FK)
+- id_emocion (FK)
+
+Tabla likes
+-----------
+- id_like (PK)
+- id_usuario (FK)
+- id_sueño (FK)
+- fecha_like
+
+Tabla admins
+------------
+- id_admin (PK)
+- id_usuario (FK)
+- permisos (pendiente de definir)

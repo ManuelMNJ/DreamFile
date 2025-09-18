@@ -1,0 +1,35 @@
+[Página de inicio]
+│
+├── [Registro de cuenta]
+│     └── Formulario: nombre, nombre de usuario, email, contraseña, opción de anonimato
+│
+├── [Inicio de sesión]
+│     └── Formulario: email + contraseña
+│
+├── [Explorar sueños]
+│     ├── Filtros: etiquetas, emociones, fecha, búsqueda por palabra clave
+│     ├── Vista de tarjetas de sueños públicos
+│     └── Acceso a detalle de cada sueño
+│
+├── [Detalle de sueño]
+│     ├── Texto completo
+│     ├── Autor (nombre o anónimo)
+│     ├── Etiquetas y emoción
+│     ├── Likes (comentarios: más adelante)
+│
+├── [Publicar sueño]
+│     └── Formulario: título, fecha, texto, etiquetas, emoción, visibilidad
+│
+├── [Editar/Borrar sueño]
+│     └── Solo accesible desde perfil del usuario
+│
+├── [Perfil de usuario]
+│     ├── Lista de sueños propios
+│     ├── Botón para editar/borrar cada sueño
+│
+├── [Panel de administración]
+│     ├── Lista de usuarios
+│     ├── Lista de sueños
+│     ├── Opciones de moderación (borrar, ocultar, etc.)
+│
+└── [404 / Página no encontrada]

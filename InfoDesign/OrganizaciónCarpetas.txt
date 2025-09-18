@@ -1,0 +1,36 @@
+DreamFile/
+│
+├── index.html                ← Página de inicio
+├── login.html                ← Inicio de sesión
+├── register.html             ← Registro de cuenta
+├── publish.html              ← Publicar sueño
+├── explore.html              ← Explorar sueños
+├── dream.html                ← Detalle de sueño
+├── profile.html              ← Perfil de usuario
+├── admin.html                ← Panel de administración
+│
+├── css/
+│   ├── base.css              ← Estilos generales (tipografía, colores, layout)
+│   ├── components.css        ← Botones, formularios, tarjetas, etc.
+│   ├── pages/
+│   │   ├── register.css      ← Estilos específicos para registro
+│   │   ├── publish.css       ← Estilos específicos para publicar
+│   │   ├── explore.css       ← Estilos específicos para explorar
+│   │   └── ...               ← Otros estilos por página si lo necesitas
+│
+├── js/
+│   ├── main.js               ← Funciones comunes (navegación, validación)
+│   ├── auth.js               ← Registro e inicio de sesión
+│   ├── publish.js            ← Lógica de publicación
+│   ├── explore.js            ← Carga y filtrado de sueños
+│   └── ...                   ← Otros módulos JS según funcionalidad
+│
+├── assets/
+│   ├── images/               ← Logos, íconos, fondos
+│   ├── fonts/                ← Tipografías personalizadas (si las usas)
+│   └── icons/                ← SVGs o íconos decorativos
+│
+├── data/
+│   └── suenos.json           ← Datos simulados para pruebas
+│
+└── README.txt                ← Documentación del proyecto
