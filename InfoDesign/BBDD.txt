@@ -5,7 +5,6 @@ Tabla usuarios
 - nombre_usuario (único)
 - email (único)
 - contraseña
-- es_anonimo (boolean)
 - rol (usuario/admin)
 - fecha_registro
 
@@ -44,10 +43,10 @@ Tabla likes
 - id_like (PK)
 - id_usuario (FK)
 - id_sueño (FK)
-- fecha_like
+
 
 Tabla admins
 ------------
 - id_admin (PK)
 - id_usuario (FK)
-- permisos (pendiente de definir)
+
